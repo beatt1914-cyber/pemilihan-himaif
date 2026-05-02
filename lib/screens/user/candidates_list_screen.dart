@@ -47,7 +47,7 @@ class CandidatesListScreen extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     color: AppColors.textDark)),
             const SizedBox(height: 6),
-            Text('Pilih kandidat terbaik untuk HIMAIF',
+            const Text('Pilih kandidat terbaik untuk HIMAIF',
                 style: TextStyle(color: AppColors.textGray, fontSize: 13)),
             const SizedBox(height: 24),
             // Use Column with cards instead of GridView to avoid fixed aspect ratio issues
@@ -190,7 +190,7 @@ class _CandidateCardState extends State<_CandidateCard> {
                               fontWeight: FontWeight.bold,
                               fontSize: 15,
                               color: AppColors.textDark)),
-                      Text('Calon Ketua HIMAIF',
+                      const Text('Calon Ketua HIMAIF',
                           style: TextStyle(
                               color: AppColors.textGray, fontSize: 11)),
                       const SizedBox(height: 4),
@@ -200,7 +200,7 @@ class _CandidateCardState extends State<_CandidateCard> {
                               fontWeight: FontWeight.w600,
                               fontSize: 13,
                               color: color)),
-                      Text('Calon Wakil Ketua',
+                      const Text('Calon Wakil Ketua',
                           style: TextStyle(
                               color: AppColors.textGray, fontSize: 11)),
                       const SizedBox(height: 12),

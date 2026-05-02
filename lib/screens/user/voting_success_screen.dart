@@ -88,7 +88,7 @@ class _VotingSuccessScreenState extends State<VotingSuccessScreen>
                       fontWeight: FontWeight.bold,
                       color: AppColors.textDark)),
               const SizedBox(height: 8),
-              Text(
+              const Text(
                   'Terima kasih, suara Anda\nsangat berarti.',
                   style: TextStyle(color: AppColors.textGray, fontSize: 14),
                   textAlign: TextAlign.center),
@@ -121,7 +121,7 @@ class _VotingSuccessScreenState extends State<VotingSuccessScreen>
                                 fontWeight: FontWeight.bold,
                                 fontSize: 15,
                                 color: AppColors.success)),
-                        Text('Calon Ketua HIMAIF',
+                        const Text('Calon Ketua HIMAIF',
                             style: TextStyle(
                                 color: AppColors.textGray, fontSize: 12)),
                       ],
@@ -130,7 +130,7 @@ class _VotingSuccessScreenState extends State<VotingSuccessScreen>
                 ),
               ),
               const SizedBox(height: 12),
-              Text(
+              const Text(
                   'Anda sudah berhasil menggunakan hak suara.\nTerima kasih telah berpartisipasi!',
                   style: TextStyle(color: AppColors.textGray, fontSize: 13),
                   textAlign: TextAlign.center),

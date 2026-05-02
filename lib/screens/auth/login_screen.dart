@@ -65,13 +65,13 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
                       const SizedBox(height: 24),
                     ],
-                    Text('Login',
+                    const Text('Login',
                         style: TextStyle(
                             color: AppColors.primaryDark,
                             fontSize: 28,
                             fontWeight: FontWeight.bold)),
                     const SizedBox(height: 6),
-                    Text('Masuk ke akun HIMAIF Anda',
+                    const Text('Masuk ke akun HIMAIF Anda',
                         style: TextStyle(
                             color: AppColors.textGray, fontSize: 13)),
                     const SizedBox(height: 32),
@@ -125,7 +125,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               color: AppColors.danger.withOpacity(0.3)),
                         ),
                         child: Text(_error!,
-                            style: TextStyle(
+                            style: const TextStyle(
                                 color: AppColors.danger, fontSize: 12)),
                       ),
                     ],
@@ -148,12 +148,12 @@ class _LoginScreenState extends State<LoginScreen> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text('Belum punya akun? ',
+                        const Text('Belum punya akun? ',
                             style: TextStyle(
                                 color: AppColors.textGray, fontSize: 13)),
                         GestureDetector(
                           onTap: () => Navigator.pushNamed(context, '/register'),
-                          child: Text('Daftar di sini',
+                          child: const Text('Daftar di sini',
                               style: TextStyle(
                                   color: AppColors.primaryBlue,
                                   fontWeight: FontWeight.w600,

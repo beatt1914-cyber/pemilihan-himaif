@@ -197,7 +197,7 @@ class _AddCandidateScreenState extends State<AddCandidateScreen> {
                       const Text('Tap untuk pilih foto',
                           style: TextStyle(color: AppColors.primaryBlue, fontSize: 13, fontWeight: FontWeight.w600)),
                       const SizedBox(height: 4),
-                      Text('Dari Galeri / Kamera',
+                      const Text('Dari Galeri / Kamera',
                           style: TextStyle(color: AppColors.textGray, fontSize: 11)),
                     ],
                   ),

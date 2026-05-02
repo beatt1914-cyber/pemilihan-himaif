@@ -85,7 +85,7 @@ class VotingResultsScreen extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                   fontSize: 16,
                   color: AppColors.textDark)),
-          Text('Ringkasan pemilihan suara kandidat',
+          const Text('Ringkasan pemilihan suara kandidat',
               style: TextStyle(color: AppColors.textGray, fontSize: 12)),
           const SizedBox(height: 24),
           SizedBox(
@@ -145,7 +145,7 @@ class VotingResultsScreen extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text('Total Suara',
+              const Text('Total Suara',
                   style:
                       TextStyle(color: AppColors.textGray, fontSize: 13)),
               Text('$total',
@@ -158,7 +158,7 @@ class VotingResultsScreen extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text('Persentase',
+              const Text('Persentase',
                   style:
                       TextStyle(color: AppColors.textGray, fontSize: 12)),
               Text(
@@ -170,7 +170,7 @@ class VotingResultsScreen extends StatelessWidget {
             ],
           ),
           Text('dari total ${ds.totalPemilih} pemilih',
-              style: TextStyle(color: AppColors.textGray, fontSize: 11)),
+              style: const TextStyle(color: AppColors.textGray, fontSize: 11)),
         ],
       ),
     );
@@ -231,7 +231,7 @@ class VotingResultsScreen extends StatelessWidget {
                                     fontWeight: FontWeight.w600,
                                     fontSize: 14)),
                             Text('Wakil: ${c.viceName}',
-                                style: TextStyle(
+                                style: const TextStyle(
                                     color: AppColors.textGray,
                                     fontSize: 12)),
                           ],
@@ -284,7 +284,7 @@ class VotingResultsScreen extends StatelessWidget {
         child: Row(children: [
           Text('• $label: ',
               style:
-                  TextStyle(color: AppColors.textGray, fontSize: 13)),
+                  const TextStyle(color: AppColors.textGray, fontSize: 13)),
           Text(value,
               style: const TextStyle(
                   fontWeight: FontWeight.w600, fontSize: 13)),

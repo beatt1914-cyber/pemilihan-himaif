@@ -179,7 +179,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   fontSize: 18,
                   color: AppColors.textDark)),
           const SizedBox(height: 4),
-          Text('Mahasiswa',
+          const Text('Mahasiswa',
               style: TextStyle(color: AppColors.textGray, fontSize: 13)),
           Text(user.prodi ?? 'Informatika',
               style: const TextStyle(
@@ -283,7 +283,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
       child: Row(children: [
         Icon(icon, size: 18, color: AppColors.textGray),
         const SizedBox(width: 12),
-        Text('$label:', style: TextStyle(color: AppColors.textGray, fontSize: 13)),
+        Text('$label:', style: const TextStyle(color: AppColors.textGray, fontSize: 13)),
         const SizedBox(width: 8),
         Expanded(
           child: Text(value,
@@ -308,8 +308,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
         ),
         child: Icon(icon, color: color, size: 18),
       ),
-      title: Text(label, style: TextStyle(fontSize: 13, color: AppColors.textDark, fontWeight: FontWeight.w500)),
-      trailing: Icon(Icons.arrow_forward_ios_rounded, size: 12, color: AppColors.textGray),
+      title: Text(label, style: const TextStyle(fontSize: 13, color: AppColors.textDark, fontWeight: FontWeight.w500)),
+      trailing: const Icon(Icons.arrow_forward_ios_rounded, size: 12, color: AppColors.textGray),
       onTap: onTap,
     );
   }
@@ -322,7 +322,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: Row(children: const [
+        title: const Row(children: [
           Icon(Icons.edit_rounded, color: AppColors.primaryBlue, size: 20),
           SizedBox(width: 8),
           Text('Edit Profil', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17)),
@@ -400,7 +400,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: Row(children: const [
+        title: const Row(children: [
           Icon(Icons.lock_rounded, color: AppColors.warning, size: 20),
           SizedBox(width: 8),
           Text('Ubah Password', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17)),

@@ -54,7 +54,7 @@ class HistoryScreen extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     color: AppColors.textDark)),
             const SizedBox(height: 6),
-            Text('Catatan partisipasi Anda dalam pemilihan HIMAIF',
+            const Text('Catatan partisipasi Anda dalam pemilihan HIMAIF',
                 style: TextStyle(color: AppColors.textGray, fontSize: 13)),
             const SizedBox(height: 24),
             
@@ -88,7 +88,7 @@ class HistoryScreen extends StatelessWidget {
                   fontSize: 18,
                   color: AppColors.textDark)),
           const SizedBox(height: 8),
-          Text(
+          const Text(
             'Anda belum melakukan voting. Silakan kunjungi halaman kandidat untuk memberikan suara Anda.',
             textAlign: TextAlign.center,
             style: TextStyle(color: AppColors.textGray, fontSize: 13),
@@ -149,7 +149,7 @@ class HistoryScreen extends StatelessWidget {
                             color: AppColors.textDark)),
                     Text(
                         'Direkam pada: ${DateFormat('EEEE, dd MMMM yyyy - HH:mm').format(user.votedAt!)}',
-                        style: TextStyle(color: AppColors.textGray, fontSize: 12)),
+                        style: const TextStyle(color: AppColors.textGray, fontSize: 12)),
                   ],
                 ),
               ),
@@ -203,7 +203,7 @@ class HistoryScreen extends StatelessWidget {
                             fontSize: 16,
                             color: AppColors.textDark)),
                     Text('Wakil: ${candidate.viceName}',
-                        style: TextStyle(color: AppColors.textGray, fontSize: 13)),
+                        style: const TextStyle(color: AppColors.textGray, fontSize: 13)),
                   ],
                 ),
               ),

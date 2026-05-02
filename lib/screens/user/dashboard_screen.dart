@@ -330,7 +330,7 @@ class _UserDashboardScreenState extends State<UserDashboardScreen> {
             ),
             const SizedBox(height: 10),
             Text(title, style: TextStyle(color: color, fontWeight: FontWeight.bold, fontSize: 13)),
-            Text(subtitle, style: TextStyle(color: AppColors.textGray, fontSize: 11)),
+            Text(subtitle, style: const TextStyle(color: AppColors.textGray, fontSize: 11)),
           ],
         ),
       ),

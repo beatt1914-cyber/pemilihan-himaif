@@ -68,7 +68,7 @@ class VotingConfirmScreen extends StatelessWidget {
                       color: AppColors.textDark),
                   textAlign: TextAlign.center),
               const SizedBox(height: 8),
-              Text('Pilihan Anda tidak dapat diubah setelah dikonfirmasi.',
+              const Text('Pilihan Anda tidak dapat diubah setelah dikonfirmasi.',
                   style: TextStyle(color: AppColors.textGray, fontSize: 13),
                   textAlign: TextAlign.center),
               const SizedBox(height: 28),
@@ -100,11 +100,11 @@ class VotingConfirmScreen extends StatelessWidget {
                                   fontWeight: FontWeight.bold,
                                   fontSize: 15,
                                   color: color)),
-                          Text('Calon Ketua HIMAIF',
+                          const Text('Calon Ketua HIMAIF',
                               style: TextStyle(
                                   color: AppColors.textGray, fontSize: 12)),
                           Text('Wakil: ${candidate.viceName}',
-                              style: TextStyle(
+                              style: const TextStyle(
                                   color: AppColors.textGray, fontSize: 12)),
                         ],
                       ),
@@ -119,7 +119,7 @@ class VotingConfirmScreen extends StatelessWidget {
                     child: OutlinedButton(
                       style: OutlinedButton.styleFrom(
                         padding: const EdgeInsets.symmetric(vertical: 14),
-                        side: BorderSide(color: AppColors.cardBorder),
+                        side: const BorderSide(color: AppColors.cardBorder),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(8)),
                       ),

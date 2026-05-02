@@ -71,13 +71,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       ),
                       const SizedBox(height: 24),
                     ],
-                    Text('Daftar Akun',
+                    const Text('Daftar Akun',
                         style: TextStyle(
                             color: AppColors.primaryDark,
                             fontSize: 28,
                             fontWeight: FontWeight.bold)),
                     const SizedBox(height: 6),
-                    Text('Bergabung dengan HIMAIF Informatika',
+                    const Text('Bergabung dengan HIMAIF Informatika',
                         style: TextStyle(
                             color: AppColors.textGray, fontSize: 13)),
                     const SizedBox(height: 28),
@@ -139,12 +139,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text('Sudah punya akun? ',
+                        const Text('Sudah punya akun? ',
                             style: TextStyle(
                                 color: AppColors.textGray, fontSize: 13)),
                         GestureDetector(
                           onTap: () => Navigator.pop(context),
-                          child: Text('Login di sini',
+                          child: const Text('Login di sini',
                               style: TextStyle(
                                   color: AppColors.primaryBlue,
                                   fontWeight: FontWeight.w600,

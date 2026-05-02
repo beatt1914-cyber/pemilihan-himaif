@@ -169,7 +169,7 @@ class CandidateDetailScreen extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                   fontSize: 16,
                   color: AppColors.textDark)),
-          Text('Calon Ketua HIMAIF',
+          const Text('Calon Ketua HIMAIF',
               style: TextStyle(color: AppColors.textGray, fontSize: 12)),
           const SizedBox(height: 6),
           Text(candidate.viceName,
@@ -178,7 +178,7 @@ class CandidateDetailScreen extends StatelessWidget {
                   fontWeight: FontWeight.w600,
                   fontSize: 14,
                   color: color)),
-          Text('Calon Wakil Ketua',
+          const Text('Calon Wakil Ketua',
               style: TextStyle(color: AppColors.textGray, fontSize: 12)),
           const SizedBox(height: 20),
           if (!user.hasVoted)
@@ -222,13 +222,13 @@ class CandidateDetailScreen extends StatelessWidget {
                 color: AppColors.success.withOpacity(0.1),
                 borderRadius: BorderRadius.circular(8),
               ),
-              child: Row(
+              child: const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Icon(Icons.check_circle,
+                  Icon(Icons.check_circle,
                       color: AppColors.success, size: 16),
-                  const SizedBox(width: 8),
-                  const Text('Anda sudah memilih',
+                  SizedBox(width: 8),
+                  Text('Anda sudah memilih',
                       style: TextStyle(
                           color: AppColors.success,
                           fontSize: 12,

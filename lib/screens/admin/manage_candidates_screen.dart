@@ -183,10 +183,10 @@ class _ManageCandidatesScreenState extends State<ManageCandidatesScreen> {
           Container(
             padding:
                 const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: AppColors.lightBg,
               borderRadius:
-                  const BorderRadius.vertical(top: Radius.circular(11)),
+                  BorderRadius.vertical(top: Radius.circular(11)),
             ),
             child: const Row(
               children: [
@@ -239,7 +239,7 @@ class _ManageCandidatesScreenState extends State<ManageCandidatesScreen> {
                                       fontWeight: FontWeight.w600,
                                       fontSize: 13)),
                               Text('Wakil: ${c.viceName}',
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                       color: AppColors.textGray,
                                       fontSize: 11)),
                             ],
@@ -249,7 +249,7 @@ class _ManageCandidatesScreenState extends State<ManageCandidatesScreen> {
                     ),
                     Expanded(
                       child: Text(c.visi,
-                          style: TextStyle(
+                          style: const TextStyle(
                               color: AppColors.textGray, fontSize: 12),
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis),
@@ -268,7 +268,7 @@ class _ManageCandidatesScreenState extends State<ManageCandidatesScreen> {
                             onPressed: () => _editCandidate(c),
                             tooltip: 'Edit'),
                         IconButton(
-                            icon: Icon(Icons.delete_rounded,
+                            icon: const Icon(Icons.delete_rounded,
                                 color: AppColors.danger, size: 18),
                             onPressed: () =>
                                 _deleteCandidate(c.id, c.chairmanName),
@@ -326,7 +326,7 @@ class _ManageCandidatesScreenState extends State<ManageCandidatesScreen> {
                         style: const TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 14)),
                     Text('Wakil: ${c.viceName}',
-                        style: TextStyle(
+                        style: const TextStyle(
                             color: AppColors.textGray, fontSize: 12)),
                     Text('${c.votes} suara',
                         style: TextStyle(
@@ -342,7 +342,7 @@ class _ManageCandidatesScreenState extends State<ManageCandidatesScreen> {
                         color: AppColors.primaryBlue, size: 18),
                     onPressed: () => _editCandidate(c)),
                 IconButton(
-                    icon: Icon(Icons.delete_rounded,
+                    icon: const Icon(Icons.delete_rounded,
                         color: AppColors.danger, size: 18),
                     onPressed: () =>
                         _deleteCandidate(c.id, c.chairmanName)),

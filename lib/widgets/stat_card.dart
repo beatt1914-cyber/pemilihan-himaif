@@ -52,12 +52,12 @@ class StatCard extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(value,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: AppColors.textDark,
                         fontSize: 24,
                         fontWeight: FontWeight.bold)),
                 Text(title,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: AppColors.textGray, fontSize: 12)),
                 if (subtitle != null)
                   Text(subtitle!,

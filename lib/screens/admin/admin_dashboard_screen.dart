@@ -227,7 +227,7 @@ class AdminDashboardScreen extends StatelessWidget {
               children: [
                 Text('${pct.toStringAsFixed(1)}%',
                     style: const TextStyle(fontSize: 40, fontWeight: FontWeight.bold, color: AppColors.primaryBlue)),
-                Text('Tingkat Partisipasi', style: TextStyle(color: AppColors.textGray, fontSize: 12)),
+                const Text('Tingkat Partisipasi', style: TextStyle(color: AppColors.textGray, fontSize: 12)),
               ],
             ),
           ),
@@ -339,7 +339,7 @@ class AdminDashboardScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(title, style: TextStyle(fontWeight: FontWeight.w600, fontSize: 14, color: color)),
-                  Text(sub, style: TextStyle(color: AppColors.textGray, fontSize: 12)),
+                  Text(sub, style: const TextStyle(color: AppColors.textGray, fontSize: 12)),
                 ],
               ),
             ),
@@ -358,7 +358,7 @@ class AdminDashboardScreen extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(label, style: TextStyle(color: AppColors.textGray, fontSize: 12)),
+            Text(label, style: const TextStyle(color: AppColors.textGray, fontSize: 12)),
             Text('$value / $total', style: TextStyle(color: color, fontSize: 12, fontWeight: FontWeight.w600)),
           ],
         ),

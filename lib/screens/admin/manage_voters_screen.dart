@@ -82,9 +82,9 @@ class _ManageVotersScreenState extends State<ManageVotersScreen> {
         children: [
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: AppColors.lightBg,
-              borderRadius: const BorderRadius.vertical(top: Radius.circular(11)),
+              borderRadius: BorderRadius.vertical(top: Radius.circular(11)),
             ),
             child: const Row(
               children: [
@@ -114,14 +114,14 @@ class _ManageVotersScreenState extends State<ManageVotersScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(u.name, style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 13)),
-                            Text(u.email, style: TextStyle(color: AppColors.textGray, fontSize: 11)),
-                            Text('NIM: ${u.nim}', style: TextStyle(color: AppColors.textGray, fontSize: 10)),
+                            Text(u.email, style: const TextStyle(color: AppColors.textGray, fontSize: 11)),
+                            Text('NIM: ${u.nim}', style: const TextStyle(color: AppColors.textGray, fontSize: 10)),
                           ],
                         ),
                       ),
                       Expanded(
                         flex: 1,
-                        child: Text(u.prodi, style: TextStyle(color: AppColors.textGray, fontSize: 12)),
+                        child: Text(u.prodi, style: const TextStyle(color: AppColors.textGray, fontSize: 12)),
                       ),
                       Expanded(
                         flex: 2,
@@ -146,7 +146,7 @@ class _ManageVotersScreenState extends State<ManageVotersScreen> {
                               const SizedBox(width: 8),
                               Text(
                                 DateFormat('dd MMM HH:mm').format(u.votedAt!),
-                                style: TextStyle(color: AppColors.textGray, fontSize: 11),
+                                style: const TextStyle(color: AppColors.textGray, fontSize: 11),
                               ),
                             ]
                           ],
@@ -203,9 +203,9 @@ class _ManageVotersScreenState extends State<ManageVotersScreen> {
                 ],
               ),
               const SizedBox(height: 8),
-              Text(u.email, style: TextStyle(color: AppColors.textGray, fontSize: 12)),
-              Text('NIM: ${u.nim}', style: TextStyle(color: AppColors.textGray, fontSize: 12)),
-              Text('Prodi: ${u.prodi}', style: TextStyle(color: AppColors.textGray, fontSize: 12)),
+              Text(u.email, style: const TextStyle(color: AppColors.textGray, fontSize: 12)),
+              Text('NIM: ${u.nim}', style: const TextStyle(color: AppColors.textGray, fontSize: 12)),
+              Text('Prodi: ${u.prodi}', style: const TextStyle(color: AppColors.textGray, fontSize: 12)),
               if (u.hasVoted && u.votedAt != null)
                 Padding(
                   padding: const EdgeInsets.only(top: 4),

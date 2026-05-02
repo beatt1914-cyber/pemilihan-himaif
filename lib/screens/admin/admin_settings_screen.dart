@@ -151,13 +151,13 @@ class _AdminSettingsScreenState extends State<AdminSettingsScreen> {
           const Divider(height: 32),
           Row(
             children: [
-              Expanded(
+              const Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text('Reset Data Pemilihan',
+                    Text('Reset Data Pemilihan',
                         style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.danger)),
-                    const SizedBox(height: 4),
+                    SizedBox(height: 4),
                     Text('Menghapus semua suara yang masuk. Tindakan ini tidak dapat dibatalkan.',
                         style: TextStyle(fontSize: 12, color: AppColors.textGray)),
                   ],
@@ -198,7 +198,7 @@ class _AdminSettingsScreenState extends State<AdminSettingsScreen> {
           Text(user?.name ?? 'Administrator',
               style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
           Text(user?.email ?? 'admin@himaif.ac.id',
-              style: TextStyle(color: AppColors.textGray, fontSize: 13)),
+              style: const TextStyle(color: AppColors.textGray, fontSize: 13)),
           const SizedBox(height: 24),
           SizedBox(
             width: double.infinity,
@@ -250,14 +250,14 @@ class _AdminSettingsScreenState extends State<AdminSettingsScreen> {
             children: [
               Text(title, style: const TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 4),
-              Text(subtitle, style: TextStyle(fontSize: 12, color: AppColors.textGray)),
+              Text(subtitle, style: const TextStyle(fontSize: 12, color: AppColors.textGray)),
             ],
           ),
         ),
         Switch(
           value: value,
           onChanged: onChanged,
-          activeColor: activeColor,
+          activeThumbColor: activeColor,
         ),
       ],
     );
@@ -277,7 +277,7 @@ class _AdminSettingsScreenState extends State<AdminSettingsScreen> {
             children: [
               Text(title, style: const TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 4),
-              Text(subtitle, style: TextStyle(fontSize: 12, color: AppColors.textGray)),
+              Text(subtitle, style: const TextStyle(fontSize: 12, color: AppColors.textGray)),
             ],
           ),
         ),
