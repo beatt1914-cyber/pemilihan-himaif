@@ -9,6 +9,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -35,6 +38,15 @@ jobs:
 
       - name: Run Tests
         run: flutter test --timeout 30
+
+      - name: Build Web
+        run: flutter build web --base-href "/pemilihan-himaif/"
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build/web
 
       - name: Build APK
         run: flutter build apk --release
