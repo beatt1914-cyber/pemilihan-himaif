@@ -299,7 +299,7 @@ class _ManageCandidatesScreenState extends State<ManageCandidatesScreen> {
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(12),
-            border: Border.all(color: col.withOpacity(0.3)),
+            border: Border.all(color: col.withValues(alpha: 0.3)),
           ),
           child: Row(
             children: [

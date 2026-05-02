@@ -67,7 +67,7 @@ class _UserDashboardScreenState extends State<UserDashboardScreen> {
                 borderRadius: BorderRadius.circular(20),
                 boxShadow: [
                   BoxShadow(
-                    color: AppColors.primaryBlue.withOpacity(0.35),
+                    color: AppColors.primaryBlue.withValues(alpha: 0.35),
                     blurRadius: 24,
                     offset: const Offset(0, 8),
                   )
@@ -88,7 +88,7 @@ class _UserDashboardScreenState extends State<UserDashboardScreen> {
                         const SizedBox(height: 4),
                         Text(formattedDate,
                             style: TextStyle(
-                                color: Colors.white.withOpacity(0.75),
+                                color: Colors.white.withValues(alpha: 0.75),
                                 fontSize: 12)),
                         const SizedBox(height: 16),
                         if (!user.hasVoted) ...[
@@ -113,7 +113,7 @@ class _UserDashboardScreenState extends State<UserDashboardScreen> {
                             Container(
                               padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
                               decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(0.2),
+                                color: Colors.white.withValues(alpha: 0.2),
                                 borderRadius: BorderRadius.circular(20),
                               ),
                               child: const Row(
@@ -136,7 +136,7 @@ class _UserDashboardScreenState extends State<UserDashboardScreen> {
                           Container(
                             padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
                             decoration: BoxDecoration(
-                              color: Colors.white.withOpacity(0.2),
+                              color: Colors.white.withValues(alpha: 0.2),
                               borderRadius: BorderRadius.circular(20),
                             ),
                             child: Row(
@@ -161,7 +161,7 @@ class _UserDashboardScreenState extends State<UserDashboardScreen> {
                   const SizedBox(width: 16),
                   CircleAvatar(
                     radius: 36,
-                    backgroundColor: Colors.white.withOpacity(0.2),
+                    backgroundColor: Colors.white.withValues(alpha: 0.2),
                     backgroundImage: user.profileImagePath != null
                         ? getImageProvider(user.profileImagePath!)
                         : null,
@@ -244,7 +244,7 @@ class _UserDashboardScreenState extends State<UserDashboardScreen> {
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(16),
                 border: Border.all(color: AppColors.cardBorder),
-                boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.04), blurRadius: 8, offset: const Offset(0, 2))],
+                boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: 0.04), blurRadius: 8, offset: const Offset(0, 2))],
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -268,7 +268,7 @@ class _UserDashboardScreenState extends State<UserDashboardScreen> {
                       child: Row(children: [
                         Container(
                           width: 30, height: 30,
-                          decoration: BoxDecoration(color: color.withOpacity(0.12), shape: BoxShape.circle),
+                          decoration: BoxDecoration(color: color.withValues(alpha: 0.12), shape: BoxShape.circle),
                           child: Center(child: Text('${idx + 1}', style: TextStyle(color: color, fontWeight: FontWeight.bold, fontSize: 12))),
                         ),
                         const SizedBox(width: 10),
@@ -278,7 +278,7 @@ class _UserDashboardScreenState extends State<UserDashboardScreen> {
                             const SizedBox(height: 4),
                             ClipRRect(
                               borderRadius: BorderRadius.circular(4),
-                              child: LinearProgressIndicator(value: pct, minHeight: 7, backgroundColor: color.withOpacity(0.1), valueColor: AlwaysStoppedAnimation(color)),
+                              child: LinearProgressIndicator(value: pct, minHeight: 7, backgroundColor: color.withValues(alpha: 0.1), valueColor: AlwaysStoppedAnimation(color)),
                             ),
                           ]),
                         ),
@@ -315,17 +315,17 @@ class _UserDashboardScreenState extends State<UserDashboardScreen> {
       child: Container(
         padding: const EdgeInsets.all(18),
         decoration: BoxDecoration(
-          color: color.withOpacity(0.07),
+          color: color.withValues(alpha: 0.07),
           borderRadius: BorderRadius.circular(14),
-          border: Border.all(color: color.withOpacity(0.2)),
-          boxShadow: [BoxShadow(color: color.withOpacity(0.08), blurRadius: 8, offset: const Offset(0, 3))],
+          border: Border.all(color: color.withValues(alpha: 0.2)),
+          boxShadow: [BoxShadow(color: color.withValues(alpha: 0.08), blurRadius: 8, offset: const Offset(0, 3))],
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
               padding: const EdgeInsets.all(8),
-              decoration: BoxDecoration(color: color.withOpacity(0.15), borderRadius: BorderRadius.circular(8)),
+              decoration: BoxDecoration(color: color.withValues(alpha: 0.15), borderRadius: BorderRadius.circular(8)),
               child: Icon(icon, color: color, size: 22),
             ),
             const SizedBox(height: 10),

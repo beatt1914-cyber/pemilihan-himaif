@@ -100,7 +100,7 @@ class _AdminSettingsScreenState extends State<AdminSettingsScreen> {
         border: Border.all(color: AppColors.cardBorder),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.03),
+            color: Colors.black.withValues(alpha: 0.03),
             blurRadius: 10,
             offset: const Offset(0, 4),
           )
@@ -114,7 +114,7 @@ class _AdminSettingsScreenState extends State<AdminSettingsScreen> {
               Container(
                 padding: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
-                  color: AppColors.primaryBlue.withOpacity(0.1),
+                  color: AppColors.primaryBlue.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: const Icon(Icons.settings_applications_rounded, color: AppColors.primaryBlue),
@@ -191,7 +191,7 @@ class _AdminSettingsScreenState extends State<AdminSettingsScreen> {
         children: [
           CircleAvatar(
             radius: 40,
-            backgroundColor: AppColors.primaryBlue.withOpacity(0.1),
+            backgroundColor: AppColors.primaryBlue.withValues(alpha: 0.1),
             child: const Icon(Icons.admin_panel_settings_rounded, size: 40, color: AppColors.primaryBlue),
           ),
           const SizedBox(height: 16),
@@ -257,7 +257,11 @@ class _AdminSettingsScreenState extends State<AdminSettingsScreen> {
         Switch(
           value: value,
           onChanged: onChanged,
-          activeThumbColor: activeColor,
+          activeTrackColor: activeColor,
+          thumbColor: WidgetStateProperty.resolveWith((states) {
+            if (states.contains(WidgetState.selected)) return Colors.white;
+            return null;
+          }),
         ),
       ],
     );

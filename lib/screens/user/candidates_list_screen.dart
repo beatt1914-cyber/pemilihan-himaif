@@ -125,7 +125,7 @@ class _CandidateCardState extends State<_CandidateCard> {
                   width: _hovered ? 2 : 1),
               boxShadow: [
                 BoxShadow(
-                  color: color.withOpacity(_hovered ? 0.15 : 0.05),
+                  color: color.withValues(alpha: _hovered ? 0.15 : 0.05),
                   blurRadius: _hovered ? 20 : 8,
                   offset: const Offset(0, 4),
                 ),
@@ -139,7 +139,7 @@ class _CandidateCardState extends State<_CandidateCard> {
                   height: 50,
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
-                        colors: [color.withOpacity(0.8), color]),
+                        colors: [color.withValues(alpha: 0.8), color]),
                     borderRadius: const BorderRadius.vertical(
                         top: Radius.circular(15)),
                   ),
@@ -174,7 +174,7 @@ class _CandidateCardState extends State<_CandidateCard> {
                           _avatar(widget.candidate.chairmanName, color, 30),
                           const SizedBox(width: 8),
                           _avatar(widget.candidate.viceName,
-                              color.withOpacity(0.7), 30),
+                              color.withValues(alpha: 0.7), 30),
                         ],
                       ),
                     ),

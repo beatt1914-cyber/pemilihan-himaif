@@ -25,10 +25,10 @@ class HimaifLogo extends StatelessWidget {
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             color: AppColors.primaryBlue,
-            border: Border.all(color: Colors.white.withOpacity(0.4), width: 2),
+            border: Border.all(color: Colors.white.withValues(alpha: 0.4), width: 2),
             boxShadow: [
               BoxShadow(
-                color: AppColors.primaryBlue.withOpacity(0.5),
+                color: AppColors.primaryBlue.withValues(alpha: 0.5),
                 blurRadius: 20,
                 spreadRadius: 2,
               ),
@@ -67,7 +67,7 @@ class HimaifLogo extends StatelessWidget {
             'INFORMATIKA',
             style: TextStyle(
               color: (darkBg ? Colors.white : AppColors.primaryDark)
-                  .withOpacity(0.7),
+                  .withValues(alpha: 0.7),
               fontSize: size * 0.1,
               letterSpacing: 2,
             ),
@@ -82,7 +82,7 @@ class _CircuitLogoPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
-      ..color = Colors.white.withOpacity(0.6)
+      ..color = Colors.white.withValues(alpha: 0.6)
       ..strokeWidth = 1.5
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round;
@@ -115,7 +115,7 @@ class _CircuitLogoPainter extends CustomPainter {
     canvas.drawCircle(Offset(cx, cy - r * 0.3), 2.5, paint);
 
     // Outer ring text arc (approximated with small dots)
-    paint.color = Colors.white.withOpacity(0.3);
+    paint.color = Colors.white.withValues(alpha: 0.3);
     for (int i = 0; i < 36; i++) {
       final angle = (i * 10) * pi / 180;
       final rx = cx + (size.width * 0.44) * cos(angle);
@@ -125,7 +125,7 @@ class _CircuitLogoPainter extends CustomPainter {
 
     // Bottom smile arc
     paint.style = PaintingStyle.stroke;
-    paint.color = Colors.white.withOpacity(0.6);
+    paint.color = Colors.white.withValues(alpha: 0.6);
     paint.strokeWidth = 1.5;
     final rect = Rect.fromCenter(
       center: Offset(cx, cy + size.height * 0.18),
