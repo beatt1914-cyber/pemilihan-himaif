@@ -249,9 +249,4 @@ class _RegisterScreenState extends State<RegisterScreen> {
     );
   }
 
-  Widget _label(String text) => Text(text,
-      style: const TextStyle(
-          fontWeight: FontWeight.w600,
-          color: AppColors.textDark,
-          fontSize: 13));
 }
