@@ -202,10 +202,10 @@ class VotingResultsScreen extends StatelessWidget {
               padding: const EdgeInsets.all(16),
               margin: const EdgeInsets.only(bottom: 12),
               decoration: BoxDecoration(
-                color: color.withValues(alpha: 0.04),
+                color: color.withOpacity(0.04),
                 borderRadius: BorderRadius.circular(8),
                 border:
-                    Border.all(color: color.withValues(alpha: 0.15)),
+                    Border.all(color: color.withOpacity(0.15)),
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -261,7 +261,7 @@ class VotingResultsScreen extends StatelessWidget {
                     child: LinearProgressIndicator(
                       value: pct.toDouble(),
                       minHeight: 10,
-                      backgroundColor: color.withValues(alpha: 0.1),
+                      backgroundColor: color.withOpacity(0.1),
                       valueColor: AlwaysStoppedAnimation(color),
                     ),
                   ),

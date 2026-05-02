@@ -58,7 +58,7 @@ class _VotingSuccessScreenState extends State<VotingSuccessScreen>
               borderRadius: BorderRadius.circular(24),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withValues(alpha: 0.08),
+                  color: Colors.black.withOpacity(0.08),
                   blurRadius: 40,
                 ),
               ],
@@ -72,10 +72,10 @@ class _VotingSuccessScreenState extends State<VotingSuccessScreen>
                   width: 100,
                   height: 100,
                   decoration: BoxDecoration(
-                    color: AppColors.success.withValues(alpha: 0.1),
+                    color: AppColors.success.withOpacity(0.1),
                     shape: BoxShape.circle,
                     border: Border.all(
-                        color: AppColors.success.withValues(alpha: 0.4), width: 3),
+                        color: AppColors.success.withOpacity(0.4), width: 3),
                   ),
                   child: const Icon(Icons.check_circle_rounded,
                       color: AppColors.success, size: 56),
@@ -96,10 +96,10 @@ class _VotingSuccessScreenState extends State<VotingSuccessScreen>
               Container(
                 padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
-                  color: AppColors.success.withValues(alpha: 0.06),
+                  color: AppColors.success.withOpacity(0.06),
                   borderRadius: BorderRadius.circular(12),
                   border:
-                      Border.all(color: AppColors.success.withValues(alpha: 0.2)),
+                      Border.all(color: AppColors.success.withOpacity(0.2)),
                 ),
                 child: Row(
                   children: [

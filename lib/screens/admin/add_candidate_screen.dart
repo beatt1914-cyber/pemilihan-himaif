@@ -192,7 +192,7 @@ class _AddCandidateScreenState extends State<AddCandidateScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Icon(Icons.add_photo_alternate_rounded,
-                          size: 48, color: AppColors.primaryBlue.withValues(alpha: 0.5)),
+                          size: 48, color: AppColors.primaryBlue.withOpacity(0.5)),
                       const SizedBox(height: 8),
                       const Text('Tap untuk pilih foto',
                           style: TextStyle(color: AppColors.primaryBlue, fontSize: 13, fontWeight: FontWeight.w600)),

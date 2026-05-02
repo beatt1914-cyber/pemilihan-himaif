@@ -116,7 +116,7 @@ class CandidateDetailScreen extends StatelessWidget {
         border: Border.all(color: AppColors.cardBorder),
         boxShadow: [
           BoxShadow(
-              color: Colors.black.withValues(alpha: 0.04),
+              color: Colors.black.withOpacity(0.04),
               blurRadius: 8,
               offset: const Offset(0, 2))
         ],
@@ -127,7 +127,7 @@ class CandidateDetailScreen extends StatelessWidget {
             height: 72,
             decoration: BoxDecoration(
               gradient:
-                  LinearGradient(colors: [color.withValues(alpha: 0.7), color]),
+                  LinearGradient(colors: [color.withOpacity(0.7), color]),
               borderRadius: BorderRadius.circular(12),
             ),
             child: Center(
@@ -159,7 +159,7 @@ class CandidateDetailScreen extends StatelessWidget {
               children: [
                 _bigAvatar(candidate.chairmanName, color, 34),
                 const SizedBox(width: 8),
-                _bigAvatar(candidate.viceName, color.withValues(alpha: 0.7), 34),
+                _bigAvatar(candidate.viceName, color.withOpacity(0.7), 34),
               ],
             ),
           const SizedBox(height: 14),
@@ -201,9 +201,9 @@ class CandidateDetailScreen extends StatelessWidget {
                 width: double.infinity,
                 padding: const EdgeInsets.symmetric(vertical: 14),
                 decoration: BoxDecoration(
-                  color: AppColors.danger.withValues(alpha: 0.1),
+                  color: AppColors.danger.withOpacity(0.1),
                   borderRadius: BorderRadius.circular(8),
-                  border: Border.all(color: AppColors.danger.withValues(alpha: 0.3)),
+                  border: Border.all(color: AppColors.danger.withOpacity(0.3)),
                 ),
                 child: const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -219,7 +219,7 @@ class CandidateDetailScreen extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
-                color: AppColors.success.withValues(alpha: 0.1),
+                color: AppColors.success.withOpacity(0.1),
                 borderRadius: BorderRadius.circular(8),
               ),
               child: const Row(
@@ -328,7 +328,7 @@ class CandidateDetailScreen extends StatelessWidget {
                       width: 24,
                       height: 24,
                       decoration: BoxDecoration(
-                          color: color.withValues(alpha: 0.1),
+                          color: color.withOpacity(0.1),
                           shape: BoxShape.circle),
                       child: Center(
                         child: Text('${e.key + 1}',

@@ -179,7 +179,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           Text('Bergabunglah bersama\nkami di HIMAIF!',
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                  color: Colors.white.withValues(alpha: 0.85),
+                                  color: Colors.white.withOpacity(0.85),
                                   fontSize: 15,
                                   height: 1.6)),
                         ],

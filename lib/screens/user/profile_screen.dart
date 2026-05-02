@@ -115,7 +115,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            AppColors.primaryBlue.withValues(alpha: 0.08),
+            AppColors.primaryBlue.withOpacity(0.08),
             Colors.white,
           ],
         ),
@@ -124,7 +124,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         border: Border.all(color: AppColors.cardBorder),
         boxShadow: [
           BoxShadow(
-            color: AppColors.primaryBlue.withValues(alpha: 0.07),
+            color: AppColors.primaryBlue.withOpacity(0.07),
             blurRadius: 16,
             offset: const Offset(0, 4),
           )
@@ -191,7 +191,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
             decoration: BoxDecoration(
               color: (user.hasVoted ? AppColors.success : AppColors.warning)
-                  .withValues(alpha: 0.1),
+                  .withOpacity(0.1),
               borderRadius: BorderRadius.circular(20),
             ),
             child: Text(
@@ -252,7 +252,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         border: Border.all(color: AppColors.cardBorder),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withValues(alpha: 0.03),
+            color: Colors.black.withOpacity(0.03),
             blurRadius: 8,
             offset: const Offset(0, 2),
           )
@@ -303,7 +303,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
       leading: Container(
         padding: const EdgeInsets.all(6),
         decoration: BoxDecoration(
-          color: color.withValues(alpha: 0.1),
+          color: color.withOpacity(0.1),
           borderRadius: BorderRadius.circular(8),
         ),
         child: Icon(icon, color: color, size: 18),

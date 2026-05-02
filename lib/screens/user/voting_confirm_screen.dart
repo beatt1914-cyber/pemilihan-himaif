@@ -42,7 +42,7 @@ class VotingConfirmScreen extends StatelessWidget {
               borderRadius: BorderRadius.circular(20),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withValues(alpha: 0.08),
+                  color: Colors.black.withOpacity(0.08),
                   blurRadius: 40,
                   offset: const Offset(0, 8),
                 ),
@@ -55,7 +55,7 @@ class VotingConfirmScreen extends StatelessWidget {
                 width: 80,
                 height: 80,
                 decoration: BoxDecoration(
-                  color: color.withValues(alpha: 0.1),
+                  color: color.withOpacity(0.1),
                   shape: BoxShape.circle,
                 ),
                 child: Icon(Icons.help_outline_rounded, color: color, size: 40),
@@ -75,9 +75,9 @@ class VotingConfirmScreen extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
-                  color: color.withValues(alpha: 0.06),
+                  color: color.withOpacity(0.06),
                   borderRadius: BorderRadius.circular(12),
-                  border: Border.all(color: color.withValues(alpha: 0.2)),
+                  border: Border.all(color: color.withOpacity(0.2)),
                 ),
                 child: Row(
                   children: [

@@ -146,7 +146,7 @@ class _SidebarContent extends StatelessWidget {
                       Text(
                         isAdmin ? 'Administrator' : 'Mahasiswa',
                         style: TextStyle(
-                            color: Colors.white.withValues(alpha: 0.6), fontSize: 10),
+                            color: Colors.white.withOpacity(0.6), fontSize: 10),
                       ),
                     ],
                   ),
@@ -188,7 +188,7 @@ class _SidebarContent extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(20, 8, 16, 4),
         child: Text(text,
             style: TextStyle(
-                color: Colors.white.withValues(alpha: 0.4),
+                color: Colors.white.withOpacity(0.4),
                 fontSize: 10,
                 letterSpacing: 1.5,
                 fontWeight: FontWeight.w600)),
@@ -205,12 +205,12 @@ class _SidebarContent extends StatelessWidget {
       child: ListTile(
         dense: true,
         leading: Icon(icon,
-            color: isActive ? Colors.white : Colors.white.withValues(alpha: 0.6),
+            color: isActive ? Colors.white : Colors.white.withOpacity(0.6),
             size: 20),
         title: Text(
           label,
           style: TextStyle(
-            color: isActive ? Colors.white : Colors.white.withValues(alpha: 0.7),
+            color: isActive ? Colors.white : Colors.white.withOpacity(0.7),
             fontSize: 13,
             fontWeight: isActive ? FontWeight.w600 : FontWeight.normal,
           ),

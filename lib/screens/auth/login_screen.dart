@@ -119,10 +119,10 @@ class _LoginScreenState extends State<LoginScreen> {
                       Container(
                         padding: const EdgeInsets.all(10),
                         decoration: BoxDecoration(
-                          color: AppColors.danger.withValues(alpha: 0.1),
+                          color: AppColors.danger.withOpacity(0.1),
                           borderRadius: BorderRadius.circular(8),
                           border: Border.all(
-                              color: AppColors.danger.withValues(alpha: 0.3)),
+                              color: AppColors.danger.withOpacity(0.3)),
                         ),
                         child: Text(_error!,
                             style: const TextStyle(
@@ -188,11 +188,11 @@ class _LoginScreenState extends State<LoginScreen> {
                           const SizedBox(height: 32),
                           Text('Bersama HIMAIF',
                               style: TextStyle(
-                                  color: Colors.white.withValues(alpha: 0.9),
+                                  color: Colors.white.withOpacity(0.9),
                                   fontSize: 16)),
                           Text('Membangun Informatika',
                               style: TextStyle(
-                                  color: Colors.white.withValues(alpha: 0.7),
+                                  color: Colors.white.withOpacity(0.7),
                                   fontSize: 14)),
                         ],
                       ),

@@ -61,7 +61,7 @@ class AdminDashboardScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(16),
                 boxShadow: [
                   BoxShadow(
-                    color: AppColors.primaryBlue.withValues(alpha: 0.3),
+                    color: AppColors.primaryBlue.withOpacity(0.3),
                     blurRadius: 20,
                     offset: const Offset(0, 6),
                   ),
@@ -96,7 +96,7 @@ class AdminDashboardScreen extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.all(16),
                     decoration: BoxDecoration(
-                      color: Colors.white.withValues(alpha: 0.15),
+                      color: Colors.white.withOpacity(0.15),
                       shape: BoxShape.circle,
                     ),
                     child: const Icon(Icons.admin_panel_settings_rounded,
@@ -158,7 +158,7 @@ class AdminDashboardScreen extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
       decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.2),
+        color: Colors.white.withOpacity(0.2),
         borderRadius: BorderRadius.circular(20),
       ),
       child: Row(
@@ -179,7 +179,7 @@ class AdminDashboardScreen extends StatelessWidget {
         color: Colors.white,
         borderRadius: BorderRadius.circular(16),
         border: Border.all(color: AppColors.cardBorder),
-        boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: 0.04), blurRadius: 8, offset: const Offset(0, 2))],
+        boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.04), blurRadius: 8, offset: const Offset(0, 2))],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -210,7 +210,7 @@ class AdminDashboardScreen extends StatelessWidget {
         color: Colors.white,
         borderRadius: BorderRadius.circular(16),
         border: Border.all(color: AppColors.cardBorder),
-        boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: 0.04), blurRadius: 8, offset: const Offset(0, 2))],
+        boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.04), blurRadius: 8, offset: const Offset(0, 2))],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -248,7 +248,7 @@ class AdminDashboardScreen extends StatelessWidget {
         color: Colors.white,
         borderRadius: BorderRadius.circular(16),
         border: Border.all(color: AppColors.cardBorder),
-        boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: 0.04), blurRadius: 8, offset: const Offset(0, 2))],
+        boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.04), blurRadius: 8, offset: const Offset(0, 2))],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -282,7 +282,7 @@ class AdminDashboardScreen extends StatelessWidget {
                   Container(
                     width: 32,
                     height: 32,
-                    decoration: BoxDecoration(color: color.withValues(alpha: 0.12), shape: BoxShape.circle),
+                    decoration: BoxDecoration(color: color.withOpacity(0.12), shape: BoxShape.circle),
                     child: Center(child: Text('${idx + 1}', style: TextStyle(color: color, fontWeight: FontWeight.bold, fontSize: 13))),
                   ),
                   const SizedBox(width: 12),
@@ -297,7 +297,7 @@ class AdminDashboardScreen extends StatelessWidget {
                           child: LinearProgressIndicator(
                             value: barPct.toDouble(),
                             minHeight: 8,
-                            backgroundColor: color.withValues(alpha: 0.1),
+                            backgroundColor: color.withOpacity(0.1),
                             valueColor: AlwaysStoppedAnimation(color),
                           ),
                         ),
@@ -322,15 +322,15 @@ class AdminDashboardScreen extends StatelessWidget {
         margin: const EdgeInsets.only(bottom: 12),
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
-          color: color.withValues(alpha: 0.06),
+          color: color.withOpacity(0.06),
           borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: color.withValues(alpha: 0.15)),
+          border: Border.all(color: color.withOpacity(0.15)),
         ),
         child: Row(
           children: [
             Container(
               padding: const EdgeInsets.all(8),
-              decoration: BoxDecoration(color: color.withValues(alpha: 0.12), borderRadius: BorderRadius.circular(8)),
+              decoration: BoxDecoration(color: color.withOpacity(0.12), borderRadius: BorderRadius.circular(8)),
               child: Icon(icon, color: color, size: 20),
             ),
             const SizedBox(width: 14),
@@ -368,7 +368,7 @@ class AdminDashboardScreen extends StatelessWidget {
           child: LinearProgressIndicator(
             value: pct.toDouble(),
             minHeight: 8,
-            backgroundColor: color.withValues(alpha: 0.1),
+            backgroundColor: color.withOpacity(0.1),
             valueColor: AlwaysStoppedAnimation(color),
           ),
         ),

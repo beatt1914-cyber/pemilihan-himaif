@@ -80,7 +80,7 @@ class HistoryScreen extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(Icons.history_rounded, size: 64, color: AppColors.textGray.withValues(alpha: 0.3)),
+          Icon(Icons.history_rounded, size: 64, color: AppColors.textGray.withOpacity(0.3)),
           const SizedBox(height: 16),
           const Text('Belum Ada Riwayat',
               style: TextStyle(
@@ -116,10 +116,10 @@ class HistoryScreen extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: AppColors.success.withValues(alpha: 0.3)),
+        border: Border.all(color: AppColors.success.withOpacity(0.3)),
         boxShadow: [
           BoxShadow(
-              color: AppColors.success.withValues(alpha: 0.05),
+              color: AppColors.success.withOpacity(0.05),
               blurRadius: 10,
               offset: const Offset(0, 4))
         ],
@@ -132,7 +132,7 @@ class HistoryScreen extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
-                  color: AppColors.success.withValues(alpha: 0.1),
+                  color: AppColors.success.withOpacity(0.1),
                   shape: BoxShape.circle,
                 ),
                 child: const Icon(Icons.check_circle_rounded, color: AppColors.success, size: 28),
@@ -187,7 +187,7 @@ class HistoryScreen extends StatelessWidget {
                   width: 60,
                   height: 60,
                   decoration: BoxDecoration(
-                    color: AppColors.primaryBlue.withValues(alpha: 0.1),
+                    color: AppColors.primaryBlue.withOpacity(0.1),
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: const Icon(Icons.people_rounded, color: AppColors.primaryBlue),

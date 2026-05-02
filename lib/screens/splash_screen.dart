@@ -82,7 +82,7 @@ class _SplashScreenState extends State<SplashScreen>
                   Text(
                     'INFORMATIKA',
                     style: TextStyle(
-                      color: Colors.white.withValues(alpha: 0.8),
+                      color: Colors.white.withOpacity(0.8),
                       fontSize: 14,
                       letterSpacing: 4,
                     ),
@@ -91,13 +91,13 @@ class _SplashScreenState extends State<SplashScreen>
                   Container(
                     width: 60,
                     height: 2,
-                    color: Colors.white.withValues(alpha: 0.5),
+                    color: Colors.white.withOpacity(0.5),
                   ),
                   const SizedBox(height: 16),
                   Text(
                     'Bersama HIMAIF Membangun Informatika',
                     style: TextStyle(
-                      color: Colors.white.withValues(alpha: 0.7),
+                      color: Colors.white.withOpacity(0.7),
                       fontSize: 13,
                       fontStyle: FontStyle.italic,
                     ),
@@ -108,7 +108,7 @@ class _SplashScreenState extends State<SplashScreen>
                     height: 24,
                     child: CircularProgressIndicator(
                       strokeWidth: 2,
-                      color: Colors.white.withValues(alpha: 0.6),
+                      color: Colors.white.withOpacity(0.6),
                     ),
                   ),
                 ],

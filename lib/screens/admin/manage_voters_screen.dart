@@ -130,7 +130,7 @@ class _ManageVotersScreenState extends State<ManageVotersScreen> {
                             Container(
                               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                               decoration: BoxDecoration(
-                                color: (u.hasVoted ? AppColors.success : AppColors.warning).withValues(alpha: 0.1),
+                                color: (u.hasVoted ? AppColors.success : AppColors.warning).withOpacity(0.1),
                                 borderRadius: BorderRadius.circular(12),
                               ),
                               child: Text(
@@ -188,7 +188,7 @@ class _ManageVotersScreenState extends State<ManageVotersScreen> {
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                     decoration: BoxDecoration(
-                      color: (u.hasVoted ? AppColors.success : AppColors.warning).withValues(alpha: 0.1),
+                      color: (u.hasVoted ? AppColors.success : AppColors.warning).withOpacity(0.1),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Text(
